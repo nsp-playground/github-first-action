@@ -1,0 +1,23 @@
+# This is the name of the workflow
+name: First Workflow
+
+# When the workflow should be executed
+# "workflow_dispatch" - indicates that an user can manually kick off this workflow
+on: workflow_dispatch
+
+# What actions to run
+jobs:
+  # This could be named whatever we want
+  # Since this is the first job, we named it - "first-job"
+  first-job:
+    # name of the environment we want to run the job in
+    # Refer to https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners for all envs
+    runs-on: ubuntu-latest
+    # list of steps to run in the job
+    steps:
+      # name of the step
+      - name: Print greeting
+        run: echo "Hello World!
+      - name: Print bye
+        run: echo "Bye"
+

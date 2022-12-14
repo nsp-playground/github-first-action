@@ -1,10 +1,8 @@
 # This is the name of the workflow
 name: First Workflow
-
 # When the workflow should be executed
 # "workflow_dispatch" - indicates that an user can manually kick off this workflow
 on: workflow_dispatch
-
 # What actions to run
 jobs:
   # This could be named whatever we want
@@ -17,7 +15,7 @@ jobs:
     steps:
       # name of the step
       - name: Print greeting
-        run: echo "Hello World!
+        run: echo "Hello World!"
       - name: Print bye
         run: echo "Bye"
 
